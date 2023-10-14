@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&family=Space+Grotesk:wght@300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+body {
+  background-color: #202733;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  background-color: #313A48;
+  text-align: center;
+  max-width: 50rem;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main h1 {
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #53FFAA;
+  padding: 1rem;
+}
+main p {
+  color: #CEE3E9;
+  text-align: center;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+main .bar {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+main .bar div {
+  height: 1px;
+  width: 15rem;
+  background: #4F5D74;
+}
+main .main__dice--container {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  text-align: center;
+  background: #53FFAA;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  align-self: center;
+  position: absolute;
+  bottom: -12%;
+  left: 42%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main .main__dice--container:hover {
+  box-shadow: 0px 0px 40px 0px #53FFAA;
+}
+
+.animateBtn {
+  animation: animate 1.4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(200deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=main.css.map */
