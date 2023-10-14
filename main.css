@@ -60,10 +60,24 @@ main .bar {
   padding: 2rem 0;
   gap: 1rem;
 }
-main .bar div {
+main .bar__Columns {
   height: 1px;
   width: 15rem;
   background: #4F5D74;
+}
+main .bar .pause {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  align-items: center;
+  gap: 0.8rem;
+}
+main .bar .pause div {
+  height: 1.2rem;
+  width: 4px;
+  background-color: #CEE3E9;
 }
 main .main__dice--container {
   height: 6rem;

@@ -66,12 +66,28 @@ main {
         padding: 2rem 0;
         gap: 1rem;
 
-        div {
+        &__Columns {
             height: 1px;
             width: 15rem;
             background: #4F5D74;
 
 
+        }
+
+        .pause {
+            display: flex;
+            justify-content: center;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            align-items: center;
+            gap: .8rem;
+
+            div {
+                height: 1.2rem;
+                width: 4px;
+                background-color: #CEE3E9;
+            }
         }
     }
 
